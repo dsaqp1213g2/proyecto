@@ -1,6 +1,6 @@
 package dsa.tasting.rest;
 
-import java.net.URIsshshsjhs;
+import java.net.URI;
 import java.sql.Connection;
 
 import java.sql.ResultSet;
@@ -127,6 +127,7 @@ public class UserResource {
 			user.setTelefono(rs.getString("telefono"));
 			user.setEmail(rs.getString("email"));
 			user.setSexo(rs.getString("sexo"));
+			user.setFecha(rs.getString("fecha"));
 			user.setCiudad(rs.getString("ciudad"));
 			// no obligatorios: los demás
 			user.setNacionalidad(rs.getString("nacionalidad"));

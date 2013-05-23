@@ -97,6 +97,7 @@ public class UsersResource {
 				user.setNombre(rs.getString("nombre"));
 				user.setTelefono(rs.getString("telefono"));
 				user.setEmail(rs.getString("email"));
+				user.setFecha(rs.getString("fecha"));
 				user.setSexo(rs.getString("sexo"));
 				user.setCiudad(rs.getString("ciudad"));
 				// no obligatorios: los demás
