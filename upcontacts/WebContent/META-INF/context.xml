@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/upcontacts" auth="Container" type="javax.sql.DataSource"
+		maxActive="10" maxIdle="5" username="upcontacts" password="dsa"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/upcontacts?autoReconnect=true" />
+	<Realm className="org.apache.catalina.realm.DataSourceRealm"
+		dataSourceName="jdbc/upcontacts" localDataSource="true" digest="SHA"
+		userTable="usuarios" userNameCol="user" userCredCol="clave"
+		userRoleTable="roles" roleNameCol="user_role" />
+
+</Context>
